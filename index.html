@@ -1,47 +1,81 @@
 <!DOCTYPE html>
-
+<html>
+    <link type="text/css" id="dark-mode" rel="stylesheet" href(unknown)>
+    <style type="text/css" id="dark-mode-custom-style"></style>
 <head>
+    <link rel="shortcut icon" href="data:image/png;base64,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">
     <title>Google Homepage</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="googlestyle.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul id="nav_bar">
-                <li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
-                <li class="nav-links"><a href="#">Images</a></li>
-                <li id="sign_in"><a href="#">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="google">
-        <a href="#" id="google_logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"</a>
+    <div class="header">
+        <div class="left">
+            <div>
+                <span>About</span>
+            </div>
+            <div>
+                <span>Store</span>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <span>Gmail</span>
+            </div>
+            <div>
+                <span>Images</span>
+            </div>
+            <div id="grid">
+                <div id="grid_circle">
+                    <svg focusable="false" viewBox="0 0 24
+                    24"></svg>"
+                </div>
+            </div>
+            <div id="sign_in">Sign in</div>
+        </div>
     </div>
-
-    <div class="form">
-        <form>
-            <label for="form-search"></label>
-            <input type="text" id="form-search" placeholder="Search Google or type URL">
-        </form>
+    <img id="Google" src="google_logo.png" alt="Google Logo">
+    <form action="https://www.google.com/search?" method ="GET">
+        <div id="text_bubble">
+            <svg focusable="false" xmlns="https://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 
+                6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 
+                4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 
+                14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 
+                14 9.5 14z"></path>
+            </svg>
+            <input name="q" id="text_input" type="text" autofocus>
+            <img id="microphone" src="http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+        </div>
+        <div id="search_buttons">
+            <button type="submit" id="google_button">Google Search</button>
+            <button type="submit" id="rolling">
+                <div>I'm Feeling Lucky</div>
+            </button>
+        </div>
+    </form>
+    <div class="footer">
+        <div class="left">
+            <span>Business</span>
+        </div>
+        <div class="left">
+            <span>How Search Works</span>
+        </div>
+        <div class="left">
+            <span>How Search Works</span>
+        </div>
+        <div class="right">
+            <span>Privacy</span>
+        </div>
+        <div class="right">
+            <span>Terms</span>
+        </div>
+        <div class="right">
+            <span>Settings</span>
+        </div>
     </div>
-
-    <div class="buttons">
-        <input type="submit" value="Google Search" id="google_search">
-        <input type="submit" value="I'm Feeling Lucky" id="im_feeling_lucky">
-    </div>
-
-    <footer>
-        <ul class="footer-left">
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <ul class="footer-right">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="google_homepage.js"></script>
 </body>
+</html>
